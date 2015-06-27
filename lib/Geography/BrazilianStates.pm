@@ -36,66 +36,66 @@ our $STATES = [
 ];
 
 sub states {
-  my $self = shift;
+  my $class = shift;
   return map { $_->{name} } @$STATES; 
 }
 
 sub abbreviations {
-  my $self = shift;
+  my $class = shift;
   return map { $_->{abbreviation} } @$STATES; 
 }
 
 sub capitals {
-  my $self = shift;
+  my $class = shift;
   return map { $_->{capital} } @$STATES; 
 }
 
 sub regions {
-  my $self = shift;
+  my $class = shift;
   my %uniq;
   return grep { !$uniq{$_}++ } map { $_->{region} } @$STATES; 
 }
 
 sub abbreviation {
-  my ($self, $name) = @_;
+  my ($class, $name) = @_;
   for my $state(@$STATES) {
     if ($name eq $state->{name}) {
-        return $state->{abbreviation};
+      return $state->{abbreviation};
     }
     if ($name eq $state->{abbreviation}) {
-        return $state->{name};
+      return $state->{name};
     }
   }
 }
 
 sub capital {
-  my ($self, $name) = @_;
+  my ($class, $name) = @_;
   for my $state(@$STATES) {
     if ($name eq $state->{name}) {
-        return $state->{capital};
+      return $state->{capital};
     }
     if ($name eq $state->{capital}) {
-        return $state->{name};
+      return $state->{name};
     }
   }
 }
 
 sub region {
-  my ($self, $name) = @_;
+  my ($class, $name) = @_;
   my $regions = [];
   for my $state(@$STATES) {
     if ($name eq $state->{name}) {
-        return $state->{region};
+      return $state->{region};
     }
     if ($name eq $state->{region}) {
-        push @$regions, $state->{name};
+      push @$regions, $state->{name};
     }
   }
   return @$regions;
 }
 
 sub states_all {
-  my $self = shift;
+  my $class = shift;
   return $STATES;
 }
 
