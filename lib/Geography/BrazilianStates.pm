@@ -106,15 +106,97 @@ __END__
 
 =head1 NAME
 
-Geography::BrazilianStates - It's new $module
+Geography::BrazilianStates - output information of Brazilian States
 
 =head1 SYNOPSIS
 
     use Geography::BrazilianStates;
 
+    Geography::BrazilianStates->states;
+    # => get all states
+
+    Geography::BrazilianStates->abbreviations;
+    # => get all abbreviations
+
+    Geography::BrazilianStates->capitals;
+    # => get all capitals
+
+    Geography::BrazilianStates->regions;
+    # => get all regions
+
+    Geography::BrazilianStates->abbreviation('Amazonas');
+    # => 'AM'
+    Geography::BrazilianStates->abbreviation('AM');
+    # => 'Amazonas'
+
+    Geography::BrazilianStates->capital('Amazonas');
+    # => 'Manaus'
+    Geography::BrazilianStates->capital('Manaus');
+    # => 'Amazonas'
+
+    Geography::BrazilianStates->region('Amazonas');
+    # => 'Norte'
+    Geography::BrazilianStates->region('Norte');
+    # => qw(Acre Amapá Amazonas Pará Rondônia Roraima Tocantins)
+
+    Geography::BrazilianStates->states_all;
+    # => get all states with full information as ArrayRef
+
 =head1 DESCRIPTION
 
-Geography::BrazilianStates is ...
+This module provides you Brazilian States information like name, abbreviation, capital, and region itself.
+
+=head1 Class Methods
+
+=head2 states
+
+    @states = Geography::BrazilianStates->states;
+
+get all states
+
+=head2 abbreviations
+
+    @abbreviations = Geography::BrazilianStates->abbreviations;
+
+get all abbreviations
+
+=head2 capitals
+
+    @capitals = Geography::BrazilianStates->capitals;
+
+get all capitals
+
+=head2 regions
+
+    @regions = Geography::BrazilianStates->regions;
+
+get all regions
+
+=head2 abbreviation
+
+    Geography::BrazilianStates->abbreviation('Amazonas');
+    # => 'AM'
+    Geography::BrazilianStates->abbreviation('AM');
+    # => 'Amazonas'
+
+=head2 capital
+
+    Geography::BrazilianStates->capital('Amazonas');
+    # => 'Manaus'
+    Geography::BrazilianStates->capital('Manaus');
+    # => 'Amazonas'
+
+=head2 region
+
+    Geography::BrazilianStates->region('Amazonas');
+    # => 'Norte'
+    Geography::BrazilianStates->region('Norte');
+    # => qw(Acre Amapá Amazonas Pará Rondônia Roraima Tocantins)
+
+=head2 states_all
+
+    Geography::BrazilianStates->states_all;
+    # => get all states with full information as ArrayRef
 
 =head1 LICENSE
 
