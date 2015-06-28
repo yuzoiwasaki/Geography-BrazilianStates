@@ -20,22 +20,19 @@ Geography::BrazilianStates - get information of Brazilian States
 
     Geography::BrazilianStates->abbreviation('Amazonas');
     # => 'AM'
-
     Geography::BrazilianStates->abbreviation('AM');
     # => 'Amazonas'
 
     Geography::BrazilianStates->capital('Amazonas');
     # => 'Manaus'
-
     Geography::BrazilianStates->capital('Manaus');
     # => 'Amazonas'
 
     Geography::BrazilianStates->region('Amazonas');
     # => 'Norte'
-
     Geography::BrazilianStates->region('Norte');
-    # => qw(Acre AmapÃ¡ Amazonas ParÃ¡ RondÃ´nia Roraima Tocantins)
-    
+    # => qw(Acre Amapá Amazonas Pará Rondônia Roraima Tocantins)
+
     Geography::BrazilianStates->states_all;
     # => get all states with full information as ArrayRef
 
@@ -47,29 +44,32 @@ This module provides you Brazilian States information like name, abbreviation, c
 
 ## states
 
-    Geography::BrazilianStates->states;
-    # => get all states
+    @states = Geography::BrazilianStates->states;
+
+get all states
 
 ## abbreviations
 
-    Geography::BrazilianStates->abbreviations;
-    # => get all abbreviations
+    @abbreviations = Geography::BrazilianStates->abbreviations;
+
+get all abbreviations
 
 ## capitals
 
-    Geography::BrazilianStates->capitals;
-    # => get all capitals
+    @capitals = Geography::BrazilianStates->capitals;
+
+get all capitals
 
 ## regions
 
-    Geography::BrazilianStates->regions;
-    # => get all regions
+    @regions = Geography::BrazilianStates->regions;
+
+get all regions
 
 ## abbreviation
 
     Geography::BrazilianStates->abbreviation('Amazonas');
     # => 'AM'
-
     Geography::BrazilianStates->abbreviation('AM');
     # => 'Amazonas'
 
@@ -77,7 +77,6 @@ This module provides you Brazilian States information like name, abbreviation, c
 
     Geography::BrazilianStates->capital('Amazonas');
     # => 'Manaus'
-
     Geography::BrazilianStates->capital('Manaus');
     # => 'Amazonas'
 
@@ -85,9 +84,8 @@ This module provides you Brazilian States information like name, abbreviation, c
 
     Geography::BrazilianStates->region('Amazonas');
     # => 'Norte'
-
     Geography::BrazilianStates->region('Norte');
-    # => qw(Acre AmapÃ¡ Amazonas ParÃ¡ RondÃ´nia Roraima Tocantins)
+    # => qw(Acre Amapá Amazonas Pará Rondônia Roraima Tocantins)
 
 ## states\_all
 
