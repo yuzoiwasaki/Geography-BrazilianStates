@@ -103,23 +103,23 @@ __END__
 
 =head1 NAME
 
-Geography::BrazilianStates - output information of Brazilian States
+Geography::BrazilianStates - get information of Brazilian States
 
 =head1 SYNOPSIS
 
     use Geography::BrazilianStates;
 
     Geography::BrazilianStates->states;
-    # => output all states
+    # => get all states
 
     Geography::BrazilianStates->abbreviations;
-    # => output all abbreviations
+    # => get all abbreviations
 
     Geography::BrazilianStates->capitals;
-    # => output all capitals
+    # => get all capitals
 
     Geography::BrazilianStates->regions;
-    # => output all regions
+    # => get all regions
 
     Geography::BrazilianStates->abbreviation('Amazonas');
     # => 'AM'
@@ -137,7 +137,7 @@ Geography::BrazilianStates - output information of Brazilian States
     # => qw(Acre Amapá Amazonas Pará Rondônia Roraima Tocantins)
 
     Geography::BrazilianStates->states_all;
-    # => output all states with full information as ArrayRef
+    # => get all states with full information as ArrayRef
 
 =head1 DESCRIPTION
 
@@ -149,25 +149,25 @@ This module provides you Brazilian States information like name, abbreviation, c
 
     @states = Geography::BrazilianStates->states;
 
-output all states
+get all states
 
 =head2 abbreviations
 
     @abbreviations = Geography::BrazilianStates->abbreviations;
 
-output all abbreviations
+get all abbreviations
 
 =head2 capitals
 
     @capitals = Geography::BrazilianStates->capitals;
 
-output all capitals
+get all capitals
 
 =head2 regions
 
     @regions = Geography::BrazilianStates->regions;
 
-output all regions
+get all regions
 
 =head2 abbreviation
 
@@ -193,7 +193,7 @@ output all regions
 =head2 states_all
 
     Geography::BrazilianStates->states_all;
-    # => output all states with full information as ArrayRef
+    # => get all states with full information as ArrayRef
 
 =head1 LICENSE
 
