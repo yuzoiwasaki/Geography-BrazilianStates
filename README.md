@@ -101,4 +101,4 @@ it under the same terms as Perl itself.
 
 # AUTHOR
 
-yuzoiwasaki <a0556017@sophia.jp>
+yuzoiwasaki <yuzoiwasaki0929@gmail.com>
