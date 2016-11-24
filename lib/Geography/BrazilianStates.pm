@@ -204,7 +204,7 @@ it under the same terms as Perl itself.
 
 =head1 AUTHOR
 
-yuzoiwasaki E<lt>a0556017@sophia.jpE<gt>
+yuzoiwasaki E<lt>yuzoiwasaki0929@gmail.comE<gt>
 
 =cut
 
